@@ -1,0 +1,61 @@
+/* Full-size container for MenuBody */
+.menu-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  height: 80vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  gap: 15px; /* Spacing between boxes */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for each box */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  position: relative; /* Needed for overlay positioning */
+  overflow: hidden; /* Ensure no overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-size: cover; /* Ensure the background image covers the box */
+  background-position: center; /* Center the background image */
+}
+
+/* Overlay for better text visibility */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1; /* Make sure it's on top of the image */
+}
+
+/* Hover effect for all boxes */
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Icon styling */
+.icon {
+  font-size: 3rem;
+  z-index: 2; /* Ensure the icon is on top of the overlay */
+}
+
+/* Label styling */
+.labeltext {
+  font-size: 2rem; 
+  font-family: "Times New Roman", Times, serif;
+  z-index: 2; /* Ensure the label text is on top of the overlay */
+}

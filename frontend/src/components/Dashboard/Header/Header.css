@@ -1,0 +1,108 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px;
+  margin-top: 28px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.logo {
+  max-width: 85px;
+  height: auto;
+  margin-right: 15px; /* Space between logo and text */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+}
+
+.header-text {
+  color: #333;
+}
+
+.bold-text {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header-text:not(.bold-text) {
+  font-size: 16px;
+}
+
+.icon-container {
+  display: flex; /* Align icons in a row */
+  align-items: center; /* Center icons vertically */
+  gap: 15px; /* Space between icons */
+  margin-left: auto; /* Push icons to the right */
+  position: relative; /* Ensure child elements (logout box) align properly */
+}
+
+.header-icon {
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header-icon:hover {
+  color: #0073b1;
+}
+
+/* User Icon Wrapper */
+.user-icon-wrapper {
+  position: relative; /* Position relative to anchor the logout box */
+}
+
+/* Logout Box */
+.logout-box {
+  position: absolute;
+  top: 35px; /* Adjust to align perfectly below the icon */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 100; /* Ensure it stays on top of other elements */
+}
+
+/* User Image */
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* User Email */
+.user-email {
+  font-size: 16px;
+  color: #333;
+  word-break: break-word; /* Wraps long emails */
+  text-align: center;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #005f8f;
+}

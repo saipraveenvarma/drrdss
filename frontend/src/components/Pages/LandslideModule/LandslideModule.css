@@ -1,0 +1,25 @@
+.landslide-module-container {
+    display: flex;
+    height: 100vh; /* Make the container take up the full height of the viewport */
+}
+
+/* Sidebar Styling */
+.landslide-module-container > .landslide-sidebar {
+    width: 250px; /* Set default width for expanded state */
+    background-color: #f8f9fa; /* Optional: Set a background color */
+    position: fixed; /* Fix the sidebar */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Scrollable if sidebar content overflows */
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transition: width 0.3s; /* Smooth transition for width changes */
+}
+
+/* Main Content Styling */
+.landslide-module-container > .main-content {
+    flex-grow: 1;
+    overflow-y: auto; /* Only the main content should scroll */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Smooth transition for margin changes */
+}
+

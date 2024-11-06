@@ -1,0 +1,109 @@
+.content-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.map-image {
+  max-width: 700px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.text-content {
+  max-width: 650px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.map-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.leaflet-map {
+  height: 500px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.popup-content {
+  text-align: center;
+}
+.picture{
+  width: 100%;
+  height: 36rem;
+}
+/* Control Box Styles */
+.control-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears on top of the map */
+  font-family: Arial, sans-serif;
+}
+
+.control-box button {
+  display: block;
+  width: 100%;
+  margin: 3px 0;
+  padding: 6px 8px;
+  font-size: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-box button:hover {
+  background-color: #45a049;
+}
+
+.control-box button:active {
+  background-color: #3e8e41;
+}
+
+/* Disaster Data Boxes Styles */
+.disaster-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.disaster-box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease;
+}
+
+.disaster-box:hover {
+  transform: scale(1.05);
+}
+
+.disaster-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.disaster-box p {
+  margin: 8px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.disaster-box p b {
+  margin-right: 8px;
+}

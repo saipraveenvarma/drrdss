@@ -1,0 +1,183 @@
+.arrow-icon-wrapper:hover {
+    transform: rotate(90deg);
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Menu Button Wrapper */
+.menu-button-wrapper {
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-button .icon {
+    font-size: 25px;
+}
+
+.sidebar-button .label {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.sidebar-button .label.hidden {
+    display: none;
+}
+
+.sidebar-button.active .icon {
+    color: white;
+}
+
+.sidebar-button:hover {
+    background-color: #87cefa;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.sidebar-button:hover .icon {
+    color: white;
+}
+
+/* Logout Box */
+.logout-box {
+    position: absolute;
+    top: 50px;
+    right: -5px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.logout-box .user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.logout-box .user-name {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.logout-box .logout-button {
+    width: 100%;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-box .logout-button:hover {
+    background-color: #005bb5;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none; /* Initially hide dropdown */
+}
+
+.dropdown-menu.active {
+    display: flex; /* Show dropdown when active */
+    flex-direction: column;
+}
+
+
+
+.dropdown-item.active,
+.dropdown-item:hover {
+    color: white;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .sidebar-button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .sidebar-container {
+        width: 80px;
+    }
+
+    .sidebar-container.collapsed {
+        width: 60px;
+    }
+}
+
+.sidebar-container {
+    width: 200px;
+    height: 95vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 0 0 15px;
+    transition: width 0.3s;
+    position: relative;
+}
+
+.sidebar-container.collapsed {
+    width: 60px;
+}
+
+.arrow-icon-wrapper {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar-button {
+    width: 100%;
+    background-color: white;
+    color: #1e1e2f;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-button.active {
+    background-color: #1e90ff;
+    color: white;
+}
+.sidebar-item{
+    margin-bottom: 10px;
+}

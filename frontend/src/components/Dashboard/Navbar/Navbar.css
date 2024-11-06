@@ -1,0 +1,145 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.nav-buttons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: max-height 0.3s ease;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.nav-button {
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-family: "Times New Roman", Times, serif;
+    color: black; /* Default color */
+}
+
+.nav-button.active {
+    color: red; /* Active button color */
+}
+
+/* Green color on hover */
+.nav-button:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.info-bar {
+    background-color: #296646;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hover-box {
+    position: absolute;
+    background-color: #6bb336;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hover-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hover-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hover-text {
+    flex: 1;
+    padding: 10px;
+    font-size: 50px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+.hover-points {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.point {
+    margin: 5px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.hover-image {
+    flex: 0 0 100px;
+    padding: 10px;
+}
+
+.hover-image img {
+    width: 40rem;
+    height: auto;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-buttons.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.know-more-button {
+    background-color: red; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 8px 16px; /* Smaller padding for compact size */
+    cursor: pointer;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 20px; /* Rounded border for cute shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for pop */
+}
+
+.know-more-button:hover {
+    background-color: darkred;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.arrow-icon {
+    font-size: 14px; /* Smaller arrow icon */
+}
